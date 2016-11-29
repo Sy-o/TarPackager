@@ -1,0 +1,25 @@
+include <string>;
+
+class options
+{
+	bool --help | -h
+	{
+		"View help."
+	};
+	bool --list | -l
+	{
+		"View list of files in package."
+	};
+	bool --add | -a
+	{
+		"Add file(s) to package. New package will be created if specified file doesn't exists."
+	};
+	bool --del | -d
+	{
+		"Delete file(s) from package."
+	};
+	bool --get | -g
+	{
+		"Get the file from package and save to the specified path. If no path is specified, save in the current directory."
+	}; 	
+};
